@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex & Grid</title>
+
+
+
+<style>
+
+
+
+*          {
+             box-sizing: border-box;
+           }
+
+body       {
+             margin:0px;
+             padding:0px;
+           }
+
+#headerdiv {
+              width:100%;
+              height:400px;
+              background-image: url("https://images.pexels.com/photos/1574184/pexels-photo-1574184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+              background-size: cover;
+              background-position: center;
+              filter:blur(2px);
+
+           }
+
+#navbar    {
+             width:100%;
+             background-color:#00233b;
+             position:absolute;
+             top:0px;
+}
+
+
+ul         {
+             margin-left:400px;
+           }
+
+
+li         {
+             float:left;
+             padding:10px;
+             border:1px solid white;
+             margin: -7px 5px 10px 10px;
+             list-style-type: none;
+           }
+
+a          {
+             color:white;
+             text-decoration: none;
+             font-size:13px;
+             font-family: montserrat;
+             font-weight:100;
+           }
+
+li:hover   {
+             background-color: #01385f;
+           }
+
+#headtitle {
+              position:absolute;
+              top:150px;
+              left:500px;
+
+           }
+
+.ht1       {
+              margin:0px;
+              padding:40px;
+              line-height:10px;
+              text-align:center;
+              color:rgb(255, 255, 255);
+              text-shadow: 1px 0px 7px black;
+              font-size:51px; 
+              font-family:"montserrat";
+              font-weight:300;
+}
+
+.pt1       {
+              text-align: center;
+              color:white;
+              line-height:1px;
+              margin:0px;
+              font-family: "montserrat";
+              font-weight: 100;
+              font-size: 20px;
+           }
+
+
+#maindiv1  {
+              width:80%;
+              margin:auto;
+              margin-top:50px;
+              font-family: montserrat;
+              display:grid;
+              grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+              grid-gap:20px;
+
+            } 
+
+.main-items {
+              display: flex;
+              flex-direction: column;
+              background-color:#f2f2f2;
+
+            }
+
+
+.main-img1 {
+              width:100%;
+           } 
+
+.main-heading1 {
+    color:green;
+    font-weight: 500;
+    margin:20px 10px 5px 10px;
+}
+
+.main-button1 {
+    width:40%;
+    padding:10px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: green;
+    color:white;
+    border-radius:5px;
+    border:none;
+}
+
+.main-para1 {
+    font-weight:100;
+    font-size:14px;
+    margin:10px;
+}
+
+
+
+.main-heading2 {
+    color:#0b87c3;
+    font-weight: 500;
+    margin:20px 10px 5px 10px;
+}
+
+.main-button2 {
+    width:30%;
+    padding:10px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: #0b87c3;
+    color:white;
+    border-radius:5px;
+    border:none;
+}
+
+
+.main-heading3 {
+    color:#8d220e;
+    font-weight: 500;
+    margin:20px 10px 5px 10px;
+}
+
+.main-button3 {
+    width:40%;
+    padding:10px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: #8d220e;
+    color:white;
+    border-radius:5px;
+    border:none;
+}
+
+
+.main-heading11 {
+    margin:auto;
+    color: gray;
+    margin: 10px auto 20px auto;
+}
+
+.main-para11 {
+    font-weight:100;
+    font-size:14px;
+    margin:10px;
+}
+
+.main-button11 {
+    width:20%;
+    padding:10px;
+    margin:20px;
+    margin-right:50px;
+    background-color: white;
+    color:gray;
+    border-radius:5px;
+    border:none;
+    border:1px solid gray;
+    align-self: flex-end;
+}
+
+
+
+#headerdiv2 {
+              width:100%;
+              height:400px;
+              background-image: url("https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+              background-size: cover;
+              background-position: bottom;
+              filter:blur(2px);
+              position:relative;
+              top:50px;
+
+
+           }
+
+
+#headtitle2 {
+              position:relative;
+              top:-240px;
+              left:0px;
+           }
+
+
+.ht2       {
+              margin:0px;
+              padding:40px;
+              line-height:10px;
+              text-align:center;
+              color:rgb(255, 255, 255);
+              font-size:40px; 
+              font-family:"montserrat";
+              font-weight: 300;
+}
+
+.pt2       {
+              text-align: center;
+              color:white;
+              line-height:20px;
+              margin:0px;
+              font-family: montserrat;
+              font-weight:100;
+           }
+
+
+.main-heading33  {
+                   margin:auto;
+                   color: gray;
+                   margin: 10px auto 20px auto;
+                   font-size:20px;
+}
+
+.main-para33    {
+                   font-weight:100;
+                   font-size:10px;
+                   margin:13px;
+                }
+
+
+.main-button33  {
+                   width:40%;
+                   padding:10px;
+                   margin: auto;
+                   background-color: white;
+                   color:gray;
+                   border-radius:5px;
+                   border:none;
+                   border:1px solid gray;
+                   align-self: flex-end;
+                   font-size:12px;
+                }
+
+.main-heading44 {
+                  color:gray;
+                  font-weight: 500;
+                  margin:20px 10px 5px 10px;
+                }
+
+
+.main-button44 {
+                  width:15%;
+                  padding:10px;
+                  background-color: white;
+                  color:gray;
+                  border-radius:5px;
+                  border:none;
+                  border:1px solid gray;
+                  align-self: flex-start;
+                  font-size:15px;
+                  margin:20px 10px 30px 10px;
+}
+
+
+
+#headerdiv3 {
+              width:100%;
+              height:450px;
+              background-image: url("https://images.pexels.com/photos/4251622/pexels-photo-4251622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+              background-size: cover;
+              background-position: center;
+              filter:blur(2px);
+              position:relative;
+              top:50px;
+           }
+
+
+#headtitle3 {
+              position:relative;
+              top:-350px;
+              left:0px;
+           }
+
+.ht3      {
+              margin:0px;
+              padding:40px;
+              line-height:10px;
+              text-align:center;
+              color:rgb(255, 255, 255);
+              font-size:40px; 
+              font-family:"montserrat";
+              font-weight: 300;
+              text-shadow: 1px 0px 5px black;
+}
+
+
+.pt3       {
+              text-align: center;
+              color:black;
+              line-height:20px;
+              margin:auto;
+              font-family: montserrat;
+              font-weight:100;
+              background-color: rgba(255, 255, 255, 0.3);
+              width:50%;
+              padding:10px 20px 10px 20px;
+              font-size:14px;
+           }
+
+
+form       {
+              width:100%;
+              margin:auto;
+              margin:20px;
+           }
+
+fieldset   {
+              width:54.5%;
+              margin:auto;
+              border:none;
+           }
+
+#inputdiv1 {
+              display: inline-block;
+           }
+
+input      {
+              width:400px;
+              background-color:  rgba(255, 255, 255, 0.3);
+              border:none;
+              padding:10px;
+              margin:5px 10px 5px 0px;
+           }
+
+textarea   {
+             width:310px;
+             height:120px;
+             background-color:  rgba(255, 255, 255, 0.3);
+             border:none;
+             padding:5px;
+            }
+
+#inputdiv2 {
+             display: inline-block;
+           }
+
+#subm1     {
+             width:80px;
+             background-color: #000c15;
+             color:white;
+             padding:10px;
+             margin-left:415px;
+             border-radius: 5px;
+             border:1px solid white;
+            }
+
+
+
+#headtitle4 {
+              position:relative;
+              top:-300px;
+              left:0px;
+           }
+
+
+.ht4       {
+              margin:0px;
+              padding:40px;
+              line-height:10px;
+              text-align:center;
+              color:black;
+              font-size:40px; 
+              font-family:"montserrat";
+              font-weight: 300;
+              font-style: italic;
+}
+
+.pt4       {
+              text-align: center;
+              color:black;
+              line-height:20px;
+              margin:0px;
+              font-family: montserrat;
+              font-weight:100;
+           }
+
+hr         {
+              color:rgb(184, 184, 184);
+           }
+
+.spblue    {
+             color:#1188c3;
+             font-weight: 400;
+           }
+
+</style>
+
+
+<!--font family montserrat-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+<!--header--img 1-->
+
+<div id="headerdiv"></div>
+
+<div id="navbar">
+    <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">External</a></li>
+    </ul>
+</div>
+
+
+<div id="headtitle">
+
+    <h1 class="ht1">CONQUER</h1>
+    <p class="pt1">Simple bootstrap Template</p>
+    
+</div>
+
+
+
+<!-- Grid -- flex section 1 -->
+<div id="maindiv1">
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/2131801/pexels-photo-2131801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading1">Bootstrap v3.3.6</h1>
+
+        <p class="main-para1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+        <button class="main-button1">Button Green</button>
+
+
+    </div>
+
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading2">Bootstrap v3.3.6</h1>
+
+        <p class="main-para1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+        <button class="main-button2">See Details</button>
+
+
+    </div>
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/892541/pexels-photo-892541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading3">Bootstrap v3.3.6</h1>
+
+        <p class="main-para1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+        <button class="main-button3">Red Green</button>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div id="maindiv1">
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/16778971/pexels-photo-16778971/free-photo-of-river-flowing-on-rocks-in-mountains-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading11">Two Coloumn Left Side</h1>
+
+        <p class="main-para11">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+        <p class="main-para11">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+
+
+    </div>
+
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading11">Two Coloumn Right Side</h1>
+
+        <p class="main-para11">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p> 
+        
+        <p class="main-para11">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+        </p>
+
+        <button class="main-button11">Read More</button>
+
+
+    </div>
+
+</div>
+
+
+
+<!--header--img 2-->
+
+
+<div id="headerdiv2"></div>
+
+<div id="headtitle2">
+
+    <h1 class="ht2">OUR SERVICES</h1>
+    <p class="pt2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, harum est. Dicta quidem <br>
+        sapiente minima earum sit accusamus impedit. Autem dolore sed molestias <br>
+        dicta earum sit accusamus iste iure maxime!
+    </p>
+    
+</div>
+
+
+
+
+
+<!-- Grid -- flex section 2 -->
+
+<div id="maindiv1">
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/421759/pexels-photo-421759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading33">Column One</h1>
+
+        <p class="main-para33">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita
+
+
+
+    </div>
+
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading33">Column Two</h1>
+
+        <p class="main-para33">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita
+        </p>
+
+        <button class="main-button33">Read it</button>
+
+
+    </div>
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/1126384/pexels-photo-1126384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading33">Column Three</h1>
+
+        <p class="main-para33">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita
+        </p>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="https://images.pexels.com/photos/1585892/pexels-photo-1585892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+        <h1 class="main-heading33">Column Four</h1>
+
+        <p class="main-para33">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita
+        </p>
+
+        <button class="main-button33">Details</button>
+
+
+    </div>
+
+</div>
+
+
+<div id="maindiv1">
+
+    <div class="main-items">
+ 
+        <img class="main-img1" src="gridfleximg.png">
+
+        <h1 class="main-heading44">One Big Column</h1>
+
+        <p class="main-para1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore perspiciatis corrupti molestiae magni quae repudiandae quo, voluptas laudantium repellendus harum culpa aspernatur expedita reprehenderit vel ex officiis eaque ea!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dignissimos sit. Excepturi fugiat minus soluta quia, sint incidunt inventore in, architecto nulla debitis sit distinctio, placeat odio blanditiis labore vel?<br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem vero eius magnam ex placeat fugit perferendis sit deserunt est quas dolore, dignissimos sapiente minus officiis asperiores quos doloribus repellendus laudantium.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem eaque iusto eius dolor autem sapiente ad obcaecati modi. Ea id quas quisquam accusamus modi beatae, reprehenderit iste necessitatibus sequi.
+        </p>
+
+        <button class="main-button44">Read More</button>
+
+
+    </div>
+
+</div>
+
+
+
+<!--header--img 3-->
+
+<div id="headerdiv3"></div>
+
+<div id="headtitle3">
+
+
+    <h1 class="ht3">Contact Form</h1>
+
+    <p class="pt3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, harum est. Dicta quidem <br>
+        sapiente minima earum sit accusamus impedit. Autem dolore sed molestias <br>
+        dicta earum sit accusamus iste iure maxime!
+    </p>
+
+
+
+<!--form-->
+
+<form>
+
+<fieldset>
+
+<div id="inputdiv1">
+
+    <input type="text" id="fname" name="fname" placeholder="Name"/><br>
+
+    <input type="email" id="email" name="email" placeholder="Email"/><br>
+
+    <input type="text" id="sub" name="sub" placeholder="Subject"/><br>
+
+</div>
+
+<div id="inputdiv2">
+    <textarea name="message" placeholder="Your message here..."></textarea>
+</div>
+
+<input id="subm1" type="submit" value="Send">
+
+</fieldset>
+
+</form>
+
+    
+</div>
+
+
+<div id="headtitle4">
+
+    <h1 class="ht4">Use it free!</h1>
+    <p class="pt4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, harum est. Dicta quidem <br>
+        sapiente minima earum sit accusamus impedit. Autem dolore sed
+    </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <hr>
+ 
+<br>
+    <p class="pt4">Lorem ipsum dolor sit, amet | consectetur <span class="spblue">adipisicing elit.</span></p>
+</div>
+
+
+
+
+</body>
+
+</html>
